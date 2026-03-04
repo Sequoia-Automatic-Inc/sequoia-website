@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 52" fill="none">
+  <!-- SEQUOIA wordmark — navy on light -->
+  <text x="0" y="32" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.03em" fill="#0A2466">SEQUOIA</text>
+  <!-- Gradient bar -->
+  <rect x="0" y="38" width="184" height="3" rx="1.5" fill="url(#bar)"/>
+  <!-- AUTOMATIC subtitle -->
+  <text x="184" y="50" font-family="'DM Sans', 'Helvetica Neue', Arial, sans-serif" font-weight="600" font-size="9.5" letter-spacing="0.15em" fill="#0A2466" text-anchor="end">AUTOMATIC</text>
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="184" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A2466"/>
+      <stop offset="50%" stop-color="#1E3F8F"/>
+      <stop offset="100%" stop-color="#4A6FA5"/>
+    </linearGradient>
+  </defs>
+</svg>
