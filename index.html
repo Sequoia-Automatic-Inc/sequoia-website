@@ -1034,31 +1034,31 @@ footer {
       <div class="rfq-form reveal" style="transition-delay: 0.1s;">
         <h3>Request a Quote</h3>
         <p class="form-sub">Submit your requirements and our engineering team will respond within 24 hours.</p>
-        <form onsubmit="event.preventDefault(); alert('Thank you! Our engineering team will review your request and respond within 24 hours.');" novalidate>
+        <form action="https://formspree.io/f/xkoqnbgq" method="POST">
         <div class="form-row">
           <div class="form-group">
             <label for="fname">First Name <span aria-hidden="true">*</span></label>
-            <input type="text" id="fname" placeholder="James" required aria-required="true" autocomplete="given-name">
+            <input type="text" id="fname" name="first_name" placeholder="James" required aria-required="true" autocomplete="given-name">
           </div>
           <div class="form-group">
             <label for="lname">Last Name <span aria-hidden="true">*</span></label>
-            <input type="text" id="lname" placeholder="Smith" required aria-required="true" autocomplete="family-name">
+            <input type="text" id="lname" name="last_name" placeholder="Smith" required aria-required="true" autocomplete="family-name">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label for="company">Company <span aria-hidden="true">*</span></label>
-            <input type="text" id="company" placeholder="Your company" required aria-required="true" autocomplete="organization">
+            <input type="text" id="company" name="company" placeholder="Your company" required aria-required="true" autocomplete="organization">
           </div>
           <div class="form-group">
             <label for="email">Email <span aria-hidden="true">*</span></label>
-            <input type="email" id="email" placeholder="james@company.com" required aria-required="true" autocomplete="email">
+            <input type="email" id="email" name="email" placeholder="james@company.com" required aria-required="true" autocomplete="email">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group full">
             <label for="market">Target Market</label>
-            <select id="market">
+            <select id="market" name="target_market">
               <option value="">Select a market...</option>
               <option>Automotive Thermal Management</option>
               <option>Data Center Thermal Management</option>
@@ -1069,7 +1069,7 @@ footer {
         <div class="form-row">
           <div class="form-group full">
             <label for="details">Project Details</label>
-            <textarea id="details" placeholder="Describe your component requirements, material, estimated annual volume, and any critical tolerances..."></textarea>
+            <textarea id="details" name="project_details" placeholder="Describe your component requirements, material, estimated annual volume, and any critical tolerances..."></textarea>
           </div>
         </div>
         <p style="font-size: 0.8rem; color: var(--text-light); margin-bottom: 1rem;">By submitting this form, you agree to our <a href="privacy.html" style="color: var(--orange);">Privacy Policy</a>.</p>
